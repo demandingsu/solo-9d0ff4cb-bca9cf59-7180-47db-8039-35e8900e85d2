@@ -1,0 +1,4 @@
+trip_id,route_id,service_date
+T1,R1,2026-11-18
+T2,R1,2026-11-19
+T3,R2,2026-11-18

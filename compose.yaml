@@ -1,0 +1,14 @@
+services:
+  busfeed:
+    build: .
+    image: busfeed:latest
+    ports:
+      - "8000:8000"
+    environment:
+      BUSFEED_DB: /data/busfeed.db
+    volumes:
+      - busfeed-data:/data
+    restart: unless-stopped
+
+volumes:
+  busfeed-data:
